@@ -16,7 +16,7 @@
             <a href="#section-info">Introduce</a>
             <a href="#section-curriculum">Curriculum</a>
             <a href="#section-timetable">Timetable</a>
-            <a href="#">Contact</a>
+            <a href="#section-contact">Contact</a>
         </nav>
         <header class="main__background" bgproperties="fixed">
             <h4>Imagine your own world.</h4>
@@ -78,43 +78,23 @@
                     <span>Python</span>
                 </div>
             </div>
-            <div class="main__curriculum--explain">
-                <div class="main__curriculum--header">
-                    <span>Language</span>
-                    <span>Age</span>
-                    <span>Statue</span>
-                    <span>Content</span>
+            <div class="main__curriculum--direct">
+                <div class="main__curriculum--option option-first">
+                    <span>Learning Basic</span>
+                    <p>각 언어의 기초적인 문법을 학습하고, 간단한 예제를 풀이합니다.</p>
                 </div>
-                <div class="main__curriculum--info info-python">
-                    <span>Python</span>
-                    <span>12+</span>
-                    <span>Available</span>
-                    <span>Python의 기초를 학습하고, 이와 관련된 프로그램을 제작하여 프로그래밍에 대한 흥미를 더합니다.</span>
+                <div class="main__curriculum--option option-second">
+                    <span>Solving Quiz</span>
+                    <p>매주 선생님이 제공하는 퀴즈를 풀어보고, 같이 풀이를 진행합니다.</p>
                 </div>
-                <div class="main__curriculum--info info-js">
-                    <span>Javascript</span>
-                    <span>9+</span>
-                    <span>Available</span>
-                    <span>다양한 범위에서 사용되는 Javascript의 기초를 같이 학습하고, 이와 관련된 프로그램을 개발합니다.</span>
+                <div class="main__curriculum--option option-third">
+                    <span>Building Project</span>
+                    <p>소규모 프로젝트를 기획하고, 단계적 과정을 거쳐 결과물을 만듭니다.</p>
                 </div>
-                <div class="main__curriculum--info info-java">
-                    <span>Java</span>
-                    <span>15+</span>
-                    <span>Available</span>
-                    <span>객체 지향 언어의 대표 주자인 Java에 대해 학습하고, OOP의 개념에 대해서도 추가적으로 학습합니다.</span>
+                <div class="main__curriculum--option option-fourth">
+                    <span>Review Everyday</span>
+                    <p>수업 시작 전, 지난주에 배웠던 내용을 확실히 복습하고 넘어갑니다.</p>
                 </div>
-                <div class="main__curriculum--info info-html">
-                    <span>HTML/CSS</span>
-                    <span>10+</span>
-                    <span>Available</span>
-                    <span>프론트엔드 기술의 기초인 HTML5 와 CSS3 를 병행하여 웹 사이트 제작의 기초를 함께 학습합니다.</span>
-                </div>
-                <div class="main__curriculum--info info-makecode">
-                    <span>MakeCode</span>
-                    <span>8+</span>
-                    <span>Available</span>
-                    <span>Minecraft를 활용한 Code connection of MakeCode를 통해 블럭형 프로그래밍에 대해 학습합니다.</span>
-                </div>   
             </div>
         </div>
         <div class="main__timetable" id="section-timetable">
@@ -122,8 +102,58 @@
                 <h4>Timetable</h4>
                 <p>수업 시간표</p> 
             </div>
+            <div class="main__timetable--explain">
+                <div class="main__timetable--header">
+                    <span>Time</span>
+                    <span>Monday</span>
+                    <span>Tuesday</span>
+                    <span>Wednesday</span>
+                    <span>Thursday</span>
+                    <span>Friday</span>
+                </div>
+                <div class="main__timetable--info info-python">
+                    <span class="info-time">17:00 - 18:00</span>
+                    <span class="info-none">.</span>
+                    <span class="info-has-class">최진<p>Python</p></span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                </div>
+                <div class="main__timetable--info info-js">
+                    <span class="info-time">18:00 - 19:00</span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                </div>
+                <div class="main__timetable--info info-makecode">
+                    <span class="info-time">19:00 - 20:00</span>
+                    <span class="info-has-class">임성주<p>Python</p></span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                </div>  
+                <div class="main__timetable--info info-java">
+                    <span class="info-time">20:00 - 21:00</span>
+                    <span class="info-has-class">송호진<p>MakeCode</p></span>
+                    <span class="info-none">.</span>
+                    <span class="info-has-class">김태현<p>Python</p></span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                </div>
+                <div class="main__timetable--info info-html">
+                    <span class="info-time">21:00 - 22:00</span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                    <span class="info-none">.</span>
+                </div> 
+            </div>
         </div>
-        <div class="main__contactus">
+        <div class="main__contactus" id="section-contact">
             <div class="main__title">
                 <h4>Contact Me</h4>
                 <p>수업 문의하기</p> 

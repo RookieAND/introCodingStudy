@@ -74,7 +74,7 @@ body {
     height: 45vw;
 
     background-color: rgb(25, 25, 25);
-    background-image: url(../img/bgimg1.jpg);
+    background-image: url(../img/bg_img/bgimg1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -184,18 +184,18 @@ body {
     width: 100vw;
     height: 40vw;
 
-    background-color: rgb(240, 240, 240);
+    background: linear-gradient(rgb(255, 255, 255), rgb(240, 240, 240));
 
     position: relative;
     top: 3vw;
 
-    color:rgb(20, 20, 20);
+    color:rgb(35, 35, 35);
     text-align: center;
 }
 
 .main__infomation--element {
     width: 65vw;
-    height: 24vw;
+    height: 20vw;
 
     display: flex;
     justify-content: space-around;
@@ -212,7 +212,6 @@ body {
 
 .main__infomation--option {
     width: 18vw;
-    height: 24vw;
 }
 
 .main__infomation--option > a {
@@ -232,8 +231,14 @@ body {
 }
 
 .main__infomation--option > a:hover {
+    width: 8.5vw;
+    height: 8.5vw;
+    margin: 0vw auto;
+    padding: 0.75vw 0.75vw;
+
     color: rgb(25, 25, 25);
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(225, 225, 225);
+    font-size: 5.4vw;
 }
 
 .main__infomation--option > span {
@@ -263,8 +268,9 @@ body {
     color: white;
 
     width: 100vw;
-    height: 60vw;
+    height: 70vw;
 
+    background: linear-gradient(rgb(230, 230, 230), rgb(220, 220, 220));
     background-color: rgb(220, 220, 220);
 
     position: relative;
@@ -278,11 +284,11 @@ body {
 
 .main__curriculum--lang {
     width: 60vw;
-    height: 12vw;
-    margin: 0vw auto 2vw auto;
+    height: 11vw;
+    margin: 0vw auto 3.5vw auto;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: baseline;
     flex-wrap: wrap;
 
@@ -290,7 +296,7 @@ body {
 }
 
 .main__curriculum--icon {
-    flex-basis: 8vw;
+    flex-basis: 10vw;
     width: 8vw;
     text-align: center;
 }
@@ -302,97 +308,78 @@ body {
     
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
-    box-shadow: 4px 4px 5px rgba(20, 20, 20, 0.2);
+    box-shadow: 4px 4px 5px rgba(20, 20, 20, 0.1);
+
+    transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .main__curriculum--lang img:hover {
-    filter: brightness(50%);
-    transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    width: 6.5vw;
+    height: 6.5vw;
 }
 
 .main__curriculum--lang span {
-    width: 70%;
+    width: 60%;
     margin: 0.2vw auto;
     padding: 0;
     display: block;
 
     background-color: rgb(240, 240, 240);
-    box-shadow: 1px 1px 5px rgba(20, 20, 20, 0.2);
+    box-shadow: 2px 2px 4px rgba(20, 20, 20, 0.2);
 
     font-family: 'Bebas Neue';
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.25vw;
 }
 
-.main__curriculum--explain {
+.main__curriculum--direct {
     width: 80vw;
-    height: 24vw;
+    height: 32vw;
     margin: auto;
 
     background-color: rgb(240, 240, 240);
     box-shadow: 2px 2px 4px rgba(20, 20, 20, 0.2);
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-
-    position: relative;
-}
-
-.main__curriculum--header {
-    width: 100%;
-    height: 3vw;
-    
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-
-    background-color: rgb(53, 53, 53);
-
-    color: rgb(240, 240, 240);
-    text-align: center;
-    line-height: 175%;
-    font-size: 1.5vw;
-}
-
-.main__curriculum--explain span:nth-child(-n+3) {
-    flex-basis: 12%;
-}
-
-.main__curriculum--explain span:nth-child(4) {
-    flex-basis: 64%;
-}
-
-.main__curriculum--explain > div:nth-child(3),
-.main__curriculum--explain > div:nth-child(5) {
-    background-color: rgb(240, 240, 240);
-    border-top: 1px solid rgba(50, 50, 50, 0.2);
-    border-bottom: 1px solid rgba(50, 50, 50, 0.2);
-}
-
-.main__curriculum--info {
-    width: 100%;
-    height: 5vw;
-    
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 
-    background-color: rgb(255, 255, 255);
+    position: relative;
 
-    color: rgb(49, 49, 49);
-    text-align: center;
-    font-size: 1vw;
+    text-align: left;
 }
 
-.main__curriculum--info span {
+.main__curriculum--option {
+    flex-basis: 35vw;
+    height: 9vw;
+    padding: 3vw 2vw;
+    background-color: rgb(25, 25, 25);
+    background-size: cover;
+
+    color: white;
+
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.main__curriculum--option:hover {
+    padding: 2vw 1vw;
+    margin: 0.5vw 1vw;
+}
+
+.main__curriculum--option > span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.main__curriculum--option > p {
+    margin: 0.25vw auto;
+
     font-family: nanumsquare;
-    vertical-align: middle;
-}
-
-.main__curriculum--info span:nth-child(-n+3) {
-    font-size: 1.2vw;
+    font-weight: 100;
+    font-size: 1vw;
 }
 
 .main__timetable {
@@ -410,6 +397,93 @@ body {
     font-size: 2.1vw;
 }
 
+
+.main__timetable--explain {
+    width: 80vw;
+    height: 24vw;
+    margin: auto;
+
+    background-color: rgb(240, 240, 240);
+    box-shadow: 2px 2px 4px rgba(20, 20, 20, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    position: relative;
+}
+
+.main__timetable--header {
+    width: 100%;
+    height: 3.5vw;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    background: linear-gradient(rgb(25, 25, 25), rgb(60, 60, 60));
+}
+
+.main__timetable--header span {
+    flex-basis: 12vw;
+
+    color: rgb(240, 240, 240);
+    text-align: center;
+    line-height: 175%;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.main__timetable--explain > div {
+    border-top: 1px solid rgba(50, 50, 50, 0.2);
+}
+
+.main__timetable--info {
+    width: 80vw;
+    height: 5vw;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+
+    color: rgb(49, 49, 49);
+    text-align: center;
+    font-size: 1vw;
+}
+
+.main__timetable--info span {
+    flex-basis: 12vw;
+    font-family: nanumsquare;
+    vertical-align: middle;
+}
+
+.main__timetable--info p {
+    margin: 0.1vw auto 0vw auto;
+    font-size: 0.75vw;
+}
+
+.main__timetable--info span:nth-child(1) {
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.main__timetable--info .info-has-class {
+    flex-basis: 8vw;
+    margin: 0vw 2vw;
+    padding: 0.6vw;
+
+    background: linear-gradient(rgb(20, 20, 20), rgb(80, 80, 80));
+    box-sizing: border-box;
+    box-shadow: 1px 2px 2px rgba(20, 20, 20, 0.2);
+    border-radius: 25px;
+
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
 .main__contactus {
     width: 100vw;
     height: 65vw;
@@ -425,7 +499,7 @@ body {
 
 .main__contactus--form {
     width: 40vw;
-    height: 38vw;
+    height: 34vw;
     background-color: white;
     margin: auto;
     padding: 3vw 10vw;
@@ -443,7 +517,7 @@ body {
     font-size: 1.5vw;
     
     width: 39vw;
-    height: 4vw;
+    height: 3vw;
     border: 1px solid rgba(65, 65, 65, 0.5);
     border-radius: 2px;
 }
@@ -467,10 +541,10 @@ body {
 .main__contactus--form label {
     display: inline-block;
     width: 40vw;
-    margin: 0vw 0vw 0.4vw 0vw;
+    margin: 0vw 0vw 0.2vw 0vw;
 
     color:rgb(50, 50, 50);
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
     text-align: left;
