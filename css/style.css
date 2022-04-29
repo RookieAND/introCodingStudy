@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Oswald:wght@200;400;700&family=Source+Sans+Pro&display=swap');
+
+html { 
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */ 
+    -webkit-text-size-adjust: 100%; /* 2 */ 
+    scroll-behavior: smooth;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main__navbar {
+    width: 99vw;
+    height: 3vw;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    color: rgb(20, 20, 20);
+    font-family: nanumsquare;
+    font-size: 1.2vw;
+    text-align: center;
+    vertical-align: middle;
+
+    position: fixed;
+    top: 0vw;
+}
+
+.main__navbar > h4 {
+    flex-basis: 80vw;
+    margin: 0px 0px 0px 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.main__navbar > i {
+    flex-basis: 2vw;
+    margin: 0px 5px 0px 10px;
+}
+
+.main__navbar > a, a:visited {
+    flex-basis: 7vw;
+    padding: 5px, 0px;
+    margin: 0px 10px 0px 10px;
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    font-size: 0.9vw;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+
+.main__navbar > a:hover {
+    background-color: rgba(20, 20, 20, 0.5);
+
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.main__background {
+    width: 100vw;
+    height: 45vw;
+
+    background-color: rgb(25, 25, 25);
+    background-image: url(../img/bgimg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(90%) saturate(60%);
+    backdrop-filter: initial;
+
+    position: relative;
+    top: 3vw;
+    transition: all 0.5s ease;
+
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    text-shadow: 0px 4px 2px rgba(20, 20, 20, 0.5);
+}
+
+.main__background h4 {
+    margin: 0;
+    font-size: 5vw;
+    
+    position: relative;
+    top: 7vw;
+}
+
+.main__background h5 {
+    margin: 0;
+    font-size: 3vw;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    
+    position: relative;
+    top: 8vw;
+}
+
+.main__background a {
+    background-color: rgb(88, 101, 242);
+    box-shadow: 0px 5px 0px 0px rgba(50, 63, 202, 0.9);
+    border-radius: 30px;
+
+    padding: 0.5vw 4vw;
+
+    position: relative;
+    top: 15vw;
+
+    color: rgb(240, 240, 240);
+    font-size: 2vw;
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 1.8;
+    text-decoration: none;
+    text-shadow: 0px 3px rgba(50, 63, 202, 0.9);
+}
+
+.main__background a:hover {
+    box-shadow: 0px 1px 0px 0px rgba(50, 63, 202, 0.9);
+
+    position: relative;
+    top: 15.1vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    line-height: 2;
+}
+
+.main__background a:active {
+    background-color: rgb(57, 71, 224);
+    box-shadow: 0px 1px 0px 0px rgba(31, 43, 180, 0.9);
+}
+
+.main__information {
+    color: white;
+
+    width: 100vw;
+    height: 45vw;
+
+    background-color: rgb(240, 240, 240);
+
+    position: relative;
+    top: 3vw;
+
+    color:rgb(20, 20, 20);
+    text-align: center;
+}
+
+.main__title {
+    height: 16vw;
+}
+
+.main__title h4 {
+    margin: 0;
+
+    position: relative;
+    top: 4vw;
+
+    font-size: 4vw;
+}
+
+.main__title h4:after {
+    content: "";
+    display: block;
+    
+    width: 12vw;
+    margin: 0px auto;
+    border-bottom: 2px solid rgb(20, 20, 20);
+}
+
+.main__title p {
+    margin: 0;
+
+    position: relative;
+    top: 5vw;
+
+    color:rgb(50, 50, 50);
+    font-size: 1.5vw;
+    font-family: nanumsquare;
+}
+
+.main__infomation--element {
+    width: 65vw;
+    height: 24vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    margin: 0vw auto 5vw auto;
+    overflow: auto;
+}
+
+.main__infomation--option {
+    width: 18vw;
+    height: 24vw;
+}
+
+.main__infomation--option > a {
+    width: 10vw;
+    height: 10vw;
+    margin: 0vw auto;
+    padding: 0.5vw 0.5vw;
+
+    display: block;
+    background-color: rgb(35, 35, 35);
+    border-radius: 50%;
+
+    color: rgb(255, 255, 255);
+    font-size: 6.5vw;
+}
+
+.main__infomation--option > a:hover {
+    color: rgb(25, 25, 25);
+    background-color: rgb(200, 200, 200);
+}
+
+.main__infomation--option > span {
+    width: 14vw;
+    margin: 1.25vw auto 0.75vw auto;
+
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    color: rgb(35, 35, 35);
+
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.main__infomation--option > p {
+    height: 3vw;
+    width: 12vw;
+    margin: 0vw auto;
+
+    font-size: 1vw;
+}
+
+.main__curriculum {
+    color: white;
+
+    width: 100vw;
+    height: 55vw;
+
+    background-color: rgb(250, 250, 250);
+
+    position: relative;
+    top: 3vw;
+
+    color:rgb(20, 20, 20);
+    text-align: center;
+    font-size: 2.1vw;
+}
+
+.main__curriculum table {
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 3px 0px rgba(30, 30, 30, 0.3);
+    border-radius: 20px;
+    
+    height: 30vw;
+    margin: auto;
+
+    position: relative;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.main__curriculum th, td {
+    width: 10vw;
+    height: 3vw;
+
+    padding: 10px;
+
+    vertical-align: middle;
+    font-size: 1.2vw;
+}
+
+.main__curriculum tr.main__curriculum--header > th {
+    background-color: rgb(70, 70, 70);
+
+    color: white;
+    font-weight: bold;
+    font-size: 1.6vw;
+}
+
+.main__curriculum tr:nth-child(even) { 
+    background-color: rgb(240, 240, 240);
+    /* border-top: 1px solid rgba(60, 60, 60, 0.2);
+    border-bottom : 1px solid rgba(60, 60, 60, 0.2); */
+}
+
+
+.main__curriculum tr > th:nth-child(4), td:nth-child(4) {
+    width: 50vw;
+}
+
+.main__curriculum tr > td:nth-child(4) {
+    font-size: 1vw;
+}
+
+.main__curriculum tr > td:nth-child(1) {
+    font-weight: bold;
+    color: rgb(30, 30, 30);
+}
+
+.main__curriculum span.main-table-icon-none {
+    background-color: rgb(255, 73, 73);
+    box-shadow: 0px 3px 0px 0px rgba(167, 0, 0, 0.9);
+    padding: 0.3vw 2vw;
+    border-radius: 10px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.main__curriculum span.main-table-icon-yes {
+    background-color: rgb(6, 192, 0);
+    box-shadow: 0px 3px 0px 0px rgba(0, 109, 45, 0.9);
+    padding: 0.3vw 1vw;
+    border-radius: 10px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.main__timetable {
+    color: white;
+
+    width: 100vw;
+    height: 50vw;
+
+    background-color: rgb(240, 240, 240);
+
+    position: relative;
+
+    color:rgb(20, 20, 20);
+    text-align: center;
+    font-size: 2.1vw;
+}
+
+.main__contactus {
+    color: white;
+
+    width: 100vw;
+    height: 65vw;
+
+    background: linear-gradient(rgb(255, 255, 255), rgb(230, 230, 230));
+
+    position: relative;
+
+    color:rgb(20, 20, 20);
+    text-align: center;
+    font-size: 2.1vw;
+}
+
+.main__contactus--form {
+    width: 40vw;
+    height: 38vw;
+    background-color: white;
+    margin: auto;
+    padding: 3vw 5vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-self: space-around;
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+.main__contactus--form input {
+    font-size: 1.5vw;
+    
+    width: 39vw;
+    height: 4vw;
+    border: 1px solid rgba(65, 65, 65, 0.5);
+    border-radius: 2px;
+}
+
+.main__contactus--form input::placeholder {
+    margin-left: 0.5vw;
+    color:rgba(200, 200, 200, 0.75);
+    font-family: nanumsquare;
+}
+
+.main__contactus--form input[id='contact-fname'], input[id='contact-lname'] {
+    width: 15vw;
+}
+
+.main__contactus--form input[id='contact-msg'] {
+    font-size: 1.5vw;
+    height: 10vw;
+}
+
+
+.main__contactus--form label {
+    display: inline-block;
+    width: 40vw;
+    margin: 0vw 0vw 0.4vw 0vw;
+
+    color:rgb(50, 50, 50);
+    font-size: 1.6vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+.main__contactus--form label[for='contact-fname'], label[for='contact-lname'] {
+    display: inline-block;
+    width: 10vw;
+}
+
+.main__contactus--firstname {
+    flex-basis: 23.9vw;
+}
+
+.main__contactus--lastname {
+    flex-basis: 10vw;
+}
+
+.main__contactus--btn {
+    flex-basis: 40vw;
+    height: 5vw;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.main__contactus--btn button {
+    width: 10vw;
+    height: 3vw;
+
+    margin-top: 2vw;
+
+    background-color: rgba(29, 29, 29, 0.5);
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 12px;
+
+    color:rgb(250, 250, 250);
+    font-size: 2vw;
+    font-family: 'Bebas Neue';
+    text-shadow: 0px 2px 0px rgba(20, 20, 20, 0.5);
+}
+
+.main__contactus--btn button:hover {
+    position: relative;
+    top: 2px;
+    
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.main__footer {
+    width: 100vw;
+    height: 12vw;
+
+    background-color:rgb(255, 255, 255);
+
+    text-align: center;
+    font-size: 1vw;
+    font-family: nanumsquare;
+    line-height: 0.5em;
+}
+
+.main__footer--icon > i {
+    width: 3vw;
+    height: 3vw;
+    margin: 2vw 4vw 1vw 4vw;
+
+    background-color: rgb(75, 75, 75);
+    border-radius: 50%;
+    color:rgb(255, 255, 255);
+    font-size: 2vw;
+    line-height: 3vw;
+}
+
+.main__footer--copyright > p {
+    color:rgba(70, 70, 70, 0.9);
+}
+
+
+@media screen and (max-width : 768px) {
+    .main__information {
+        height: 70vw;
+    }
+
+    .main__infomation--element {
+        max-width: 768px;
+        height: 48vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__infomation--option {
+        max-width: 768px;
+        height: 14vw;
+    }
+
+    .main__infomation--option > a {
+        width: 10vw;
+        height: 10vw;
+        padding: 0.5vw 0.5vw;
+    
+        display: block;
+        background-color: rgb(35, 35, 35);
+        border-radius: 50%;
+    
+        color: rgb(255, 255, 255);
+        font-size: 6.5vw;
+
+        position: relative;
+        right: 1vw;
+        top: 1.5vw;
+    }
+
+    .main__infomation--option > span {
+        height: 3.2vw;
+        width: 40vw;
+        border-radius: 50%;
+        margin: 0.75vw auto;
+    
+        text-align: left;
+        font-size: 2.5vw;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        color: rgb(35, 35, 35);
+        
+        position: relative;
+        top: -8vw;
+        left: 16vw;
+
+        transition: all 0.3s ease;
+    }
+    
+    .main__infomation--option > p {
+        width: 40vw;
+
+        position: relative;
+        top: -8vw;
+        left: 16vw;
+
+        text-align: left;
+        font-size: 1vw;
+    }
+}
