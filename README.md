@@ -11,14 +11,20 @@ introCodingStudy - 코딩 교육 강사 홈페이지
 ## [기본 구조] ##
 
 * 내부 파일	
+  [html]
     + index.html : 홈페이지의 뼈대를 구성하는 HTML 파일.
-    + css/style.css : 홈페이지의 디자인을 구성하는 css 파일.
-    + img/imgfile.png : 홈페이지의 배경화면과 아이콘 이미지.
+  [SCSS]
+    + style.scss : 홈페이지의 디자인을 구성하는 css 파일.
+  [Image]
+    + img/bg_img : 홈페이지의 배경화면과 관련된 이미지 파일
+    + img/lang_icon : 커리큘럼의 언어와 관련된 이미지 파일
+    + img/option_img : 커리큘럼의 세부 옵션에 넣을 이미지 파일
+  [Javascript]
     + js/layoutThree.js : 홈페이지의 배경 화면을 변경시키는 js.
 
 ## [세부 기능] ##
-#### 1. 기본 레이아웃 ####
 	
   - 실시간으로 변경되는 레이아웃을 추가하여 시각적 효과를 주었음.
   - 심플한 디자인의 navbar 와 클릭 시 화면이 부드럽게 내려가는 스크롤 기능 추가.
-	- 현재 커리큘럼 및 contact us 섹션을 추가함.
+  - 현재 커리큘럼 및 contact us 섹션을 추가함.
+  - 커리큘럼의 아이콘에 hover event에 따른 부드러운 사이즈 애니메이션 추가
